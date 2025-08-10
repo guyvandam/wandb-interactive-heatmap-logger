@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": { "name": "wandb" },
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "step",
+      "type": "ordinal",
+      "axis": {
+        "title": "step",
+        "ticks": false,
+        "labels": false,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "feature",
+      "type": "ordinal",
+      "sort": false,
+      "axis": {
+        "title": "x_i",
+        "ticks": false,
+        "labels": false,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "viridis" }
+    },
+    "tooltip": [
+      { "field": "epoch", "type": "ordinal" },
+      { "field": "feature", "type": "ordinal" },
+      { "field": "value", "type": "quantitative" }
+    ]
+  },
+  "title": "Interactive Vectors Heatmap"
+}
