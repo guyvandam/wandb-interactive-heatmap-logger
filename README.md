@@ -1,5 +1,6 @@
 # wandb custom interactive chart 🙂
 
+![wandb-interactive-smiley](images/wandb-interactive-smiley.jpeg)
 
 > [!NOTE]
 > what is this code for? *Logging vectors as the training progresses - e.g. final layer logits*

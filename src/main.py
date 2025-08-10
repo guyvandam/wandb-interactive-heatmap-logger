@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 from rich.progress import track
 
@@ -27,6 +28,8 @@ if __name__ == "__main__":
     data[smile] = 0.0
 
     # show the data
+    plt.imshow(data)
+    plt.show()
 
     # 'training loop'
     for step in track(range(nx), description="Logging heatmap"):
