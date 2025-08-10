@@ -1,7 +1,7 @@
 # wandb custom interactive chart 🙂
 
 
-> Note  
+> [!NOTE]
 > what is this code for? *Logging vectors as the training progresses - e.g. final layer logits*
 
 
@@ -27,7 +27,8 @@ python3 main.py
 4. press on the 3 dots at the upper right corner and select *save as new preset*
 5. return to the *custom chart* window and select the new chart template
 6. on the right side of the window - write the query as such
-```json
+
+```text
 query {
     runSets
     (runSets: "${runSets}", limit: 500 ) {
@@ -45,7 +46,7 @@ query {
 ![image](images/wandb-custom-chart-query.png)
 
 
-> Important
+> [!IMPORTANT]
 > It takes time for the table to show on the wandb dashboard - possibly until all rows are uploaded.
 
 
